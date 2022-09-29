@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }   
+      
+  #navbar {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #007cc7;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: white;
+  }
+  
+  .nav-list a:hover {
+    color: cyan;
+  }
+  
+  #logo-link {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    text-align: center;
+    background-color: #12232e;
+    border-style: solid;
+    border-color: #203647;
+    border-width: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    display: flex;
+  }
+  .header-text {
+    margin: auto;
+  }
+  
+  #welcome-section h1 {
+    font-size: 5rem;
+  }
+  
+  #welcome-section p {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    aside {
+      order: 2;
+    }
+
+    .card {
+        padding: 10px;
+        width: 250px;
+        text-align: left;
+        border-style: solid;
+        border-width: 1px;
+      } 
